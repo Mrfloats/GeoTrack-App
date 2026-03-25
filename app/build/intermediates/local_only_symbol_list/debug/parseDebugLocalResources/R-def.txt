@@ -12,6 +12,7 @@ id btn_delete
 id btn_save
 id card_coordinates
 id et_name
+id et_radius
 id fab_add
 id fragment_container
 id iv_location_icon
@@ -20,6 +21,7 @@ id nav_locations
 id nav_map
 id rv_locations
 id til_name
+id til_radius
 id tv_lat_lng
 id tv_lat_lng_sub
 id tv_location_name

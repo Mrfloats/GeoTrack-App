@@ -3321,6 +3321,7 @@ id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id et_name
+id et_radius
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3611,6 +3612,7 @@ id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
 id til_name
+id til_radius
 id time
 id title
 id titleDividerNoCustom

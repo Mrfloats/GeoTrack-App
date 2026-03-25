@@ -33,7 +33,13 @@ public final class ActivityAddLocationBinding implements ViewBinding {
   public final TextInputEditText etName;
 
   @NonNull
+  public final TextInputEditText etRadius;
+
+  @NonNull
   public final TextInputLayout tilName;
+
+  @NonNull
+  public final TextInputLayout tilRadius;
 
   @NonNull
   public final TextView tvLatLng;
@@ -43,13 +49,16 @@ public final class ActivityAddLocationBinding implements ViewBinding {
 
   private ActivityAddLocationBinding(@NonNull ConstraintLayout rootView,
       @NonNull MaterialButton btnSave, @NonNull MaterialCardView cardCoordinates,
-      @NonNull TextInputEditText etName, @NonNull TextInputLayout tilName,
+      @NonNull TextInputEditText etName, @NonNull TextInputEditText etRadius,
+      @NonNull TextInputLayout tilName, @NonNull TextInputLayout tilRadius,
       @NonNull TextView tvLatLng, @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.btnSave = btnSave;
     this.cardCoordinates = cardCoordinates;
     this.etName = etName;
+    this.etRadius = etRadius;
     this.tilName = tilName;
+    this.tilRadius = tilRadius;
     this.tvLatLng = tvLatLng;
     this.tvTitle = tvTitle;
   }
@@ -99,9 +108,21 @@ public final class ActivityAddLocationBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.et_radius;
+      TextInputEditText etRadius = ViewBindings.findChildViewById(rootView, id);
+      if (etRadius == null) {
+        break missingId;
+      }
+
       id = R.id.til_name;
       TextInputLayout tilName = ViewBindings.findChildViewById(rootView, id);
       if (tilName == null) {
+        break missingId;
+      }
+
+      id = R.id.til_radius;
+      TextInputLayout tilRadius = ViewBindings.findChildViewById(rootView, id);
+      if (tilRadius == null) {
         break missingId;
       }
 
@@ -118,7 +139,7 @@ public final class ActivityAddLocationBinding implements ViewBinding {
       }
 
       return new ActivityAddLocationBinding((ConstraintLayout) rootView, btnSave, cardCoordinates,
-          etName, tilName, tvLatLng, tvTitle);
+          etName, etRadius, tilName, tilRadius, tvLatLng, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

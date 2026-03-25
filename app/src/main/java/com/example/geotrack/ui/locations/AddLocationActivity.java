@@ -22,6 +22,7 @@ import com.google.android.material.textfield.TextInputEditText;
 public class AddLocationActivity extends AppCompatActivity {
 
     private TextInputEditText etName;
+    private TextInputEditText etRadius;
     private TextView tvLatLng;
     private MaterialButton btnSave;
     private MapViewModel viewModel;
@@ -34,6 +35,7 @@ public class AddLocationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_location);
 
         etName = findViewById(R.id.et_name);
+        etRadius = findViewById(R.id.et_radius);
         tvLatLng = findViewById(R.id.tv_lat_lng);
         btnSave = findViewById(R.id.btn_save);
 
@@ -63,9 +65,21 @@ public class AddLocationActivity extends AppCompatActivity {
 
     private void saveLocation() {
         String name = etName.getText().toString().trim();
+        String radiusStr = etRadius.getText().toString().trim();
+
         if (name.isEmpty()) {
             etName.setError("Enter a name");
             return;
+        }
+
+        float radius = 200f;
+        if (!radiusStr.isEmpty()) {
+            try {
+                radius = Float.parseFloat(radiusStr);
+            } catch (NumberFormatException e) {
+                etRadius.setError("Invalid radius");
+                return;
+            }
         }
 
         if (currentLocation == null) {
@@ -73,7 +87,7 @@ public class AddLocationActivity extends AppCompatActivity {
             return;
         }
 
-        viewModel.saveLocationWithGeofence(name, currentLocation.getLatitude(), currentLocation.getLongitude(), 200f);
+        viewModel.saveLocationWithGeofence(name, currentLocation.getLatitude(), currentLocation.getLongitude(), radius);
         Toast.makeText(this, "Location Saved!", Toast.LENGTH_SHORT).show();
         finish();
     }
