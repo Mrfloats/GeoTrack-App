@@ -1,0 +1,214 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.geotrack"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Permissions -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:5:5-67
+12-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:5:22-64
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:6:5-79
+13-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:6:22-76
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:7:5-81
+14-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:7:22-78
+15    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+15-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:8:5-85
+15-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:8:22-82
+16    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+16-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:9:5-77
+16-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:9:22-74
+17
+18    <!-- Include required permissions for Google Maps API to run. -->
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\dec17a611de5676a611359391523cf52\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:23:5-79
+19-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\dec17a611de5676a611359391523cf52\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:23:22-76
+20
+21    <uses-feature
+21-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\dec17a611de5676a611359391523cf52\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
+22        android:glEsVersion="0x00020000"
+22-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\dec17a611de5676a611359391523cf52\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:27:9-41
+23        android:required="true" />
+23-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\dec17a611de5676a611359391523cf52\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:28:9-32
+24
+25    <queries>
+25-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\dec17a611de5676a611359391523cf52\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:30:5-34:15
+26
+27        <!-- Needs to be explicitly declared on Android R+ -->
+28        <package android:name="com.google.android.apps.maps" />
+28-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\dec17a611de5676a611359391523cf52\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:9-64
+28-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\dec17a611de5676a611359391523cf52\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:18-61
+29    </queries>
+30
+31    <permission
+31-->[androidx.core:core:1.9.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\b15544bd29ec5d9889c5ffdee464736f\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+32        android:name="com.example.geotrack.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+32-->[androidx.core:core:1.9.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\b15544bd29ec5d9889c5ffdee464736f\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+33        android:protectionLevel="signature" />
+33-->[androidx.core:core:1.9.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\b15544bd29ec5d9889c5ffdee464736f\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+34
+35    <uses-permission android:name="com.example.geotrack.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+35-->[androidx.core:core:1.9.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\b15544bd29ec5d9889c5ffdee464736f\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+35-->[androidx.core:core:1.9.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\b15544bd29ec5d9889c5ffdee464736f\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+36
+37    <application
+37-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:11:5-39:19
+38        android:allowBackup="true"
+38-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:12:9-35
+39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+39-->[androidx.core:core:1.9.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\b15544bd29ec5d9889c5ffdee464736f\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+40        android:debuggable="true"
+41        android:extractNativeLibs="false"
+42        android:icon="@android:drawable/sym_def_app_icon"
+42-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:13:9-58
+43        android:label="@string/app_name"
+43-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:14:9-41
+44        android:supportsRtl="true"
+44-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:15:9-35
+45        android:testOnly="true"
+46        android:theme="@style/Theme.GeoTrackApp" >
+46-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:16:9-49
+47
+48        <!-- Google Maps API Key -->
+49        <meta-data
+49-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:19:9-21:71
+50            android:name="com.google.android.geo.API_KEY"
+50-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:20:13-58
+51            android:value="AIzaSyAEJcmlhrKl9SVdY6pvzCh0PnOHQXVnhSs" />
+51-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:21:13-68
+52
+53        <activity
+53-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:23:9-30:20
+54            android:name="com.example.geotrack.ui.main.MainActivity"
+54-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:24:13-49
+55            android:exported="true" >
+55-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:25:13-36
+56            <intent-filter>
+56-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:26:13-29:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:27:17-69
+57-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:27:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:28:17-77
+59-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:28:27-74
+60            </intent-filter>
+61        </activity>
+62        <activity android:name="com.example.geotrack.ui.locations.AddLocationActivity" />
+62-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:32:9-70
+62-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:32:19-67
+63
+64        <receiver
+64-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:34:9-37:39
+65            android:name="com.example.geotrack.services.GeofenceBroadcastReceiver"
+65-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:35:13-63
+66            android:enabled="true"
+66-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:36:13-35
+67            android:exported="true" />
+67-->D:\FlutterProjects\MobileApp\app\src\main\AndroidManifest.xml:37:13-36
+68
+69        <service
+69-->[androidx.room:room-runtime:2.6.1] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\479adbd8f71ead2560cb0e3c350cba2c\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+70            android:name="androidx.room.MultiInstanceInvalidationService"
+70-->[androidx.room:room-runtime:2.6.1] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\479adbd8f71ead2560cb0e3c350cba2c\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+71            android:directBootAware="true"
+71-->[androidx.room:room-runtime:2.6.1] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\479adbd8f71ead2560cb0e3c350cba2c\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+72            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
+72-->[androidx.room:room-runtime:2.6.1] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\479adbd8f71ead2560cb0e3c350cba2c\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+73        <uses-library
+73-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\dec17a611de5676a611359391523cf52\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+74            android:name="org.apache.http.legacy"
+74-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\dec17a611de5676a611359391523cf52\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+75            android:required="false" />
+75-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\dec17a611de5676a611359391523cf52\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+76
+77        <provider
+77-->[androidx.emoji2:emoji2:1.2.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\791e90b8f32ab99478b5922f7a6930a3\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+78            android:name="androidx.startup.InitializationProvider"
+78-->[androidx.emoji2:emoji2:1.2.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\791e90b8f32ab99478b5922f7a6930a3\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+79            android:authorities="com.example.geotrack.androidx-startup"
+79-->[androidx.emoji2:emoji2:1.2.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\791e90b8f32ab99478b5922f7a6930a3\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+80            android:exported="false" >
+80-->[androidx.emoji2:emoji2:1.2.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\791e90b8f32ab99478b5922f7a6930a3\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+81            <meta-data
+81-->[androidx.emoji2:emoji2:1.2.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\791e90b8f32ab99478b5922f7a6930a3\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+82                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+82-->[androidx.emoji2:emoji2:1.2.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\791e90b8f32ab99478b5922f7a6930a3\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+83                android:value="androidx.startup" />
+83-->[androidx.emoji2:emoji2:1.2.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\791e90b8f32ab99478b5922f7a6930a3\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+84            <meta-data
+84-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\9e06df4e10a27b643d04d82967bceff1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+85                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+85-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\9e06df4e10a27b643d04d82967bceff1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+86                android:value="androidx.startup" />
+86-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\9e06df4e10a27b643d04d82967bceff1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+87            <meta-data
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+88                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+89                android:value="androidx.startup" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+90        </provider>
+91
+92        <activity
+92-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\f05da7b6594f803cab374e38ff0e6978\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+93            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+93-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\f05da7b6594f803cab374e38ff0e6978\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+94            android:exported="false"
+94-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\f05da7b6594f803cab374e38ff0e6978\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+95            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+95-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\f05da7b6594f803cab374e38ff0e6978\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+96
+97        <meta-data
+97-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\7729b2d203bd9014353a4fc404470624\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+98            android:name="com.google.android.gms.version"
+98-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\7729b2d203bd9014353a4fc404470624\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+99            android:value="@integer/google_play_services_version" />
+99-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\7729b2d203bd9014353a4fc404470624\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+100
+101        <receiver
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+102            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+103            android:directBootAware="false"
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+104            android:enabled="true"
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+105            android:exported="true"
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+106            android:permission="android.permission.DUMP" >
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+107            <intent-filter>
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+108                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+109            </intent-filter>
+110            <intent-filter>
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+111                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+112            </intent-filter>
+113            <intent-filter>
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+114                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+115            </intent-filter>
+116            <intent-filter>
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+117                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\OBEY KUYANGAMARA\.gradle\caches\9.0-milestone-1\transforms\fc8bae2a02d0551b247a2c05f11d6695\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+118            </intent-filter>
+119        </receiver>
+120    </application>
+121
+122</manifest>

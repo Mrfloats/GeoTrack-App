@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\OBEY KUYANGAMARA\\.gradle\\daemon\\9.0-milestone-1\\com.example.geotrack.app-mergeDebugResources-37:\\layout\\fragment_locations.xml",
+        "source": "C:\\Users\\OBEY KUYANGAMARA\\.gradle\\daemon\\9.0-milestone-1\\com.example.geotrack.app-main-40:\\layout\\fragment_locations.xml"
+    },
+    {
+        "merged": "com.example.geotrack.app-mergeDebugResources-37:/layout/activity_add_location.xml",
+        "source": "com.example.geotrack.app-main-40:/layout/activity_add_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\OBEY KUYANGAMARA\\.gradle\\daemon\\9.0-milestone-1\\com.example.geotrack.app-mergeDebugResources-37:\\layout\\item_location.xml",
+        "source": "C:\\Users\\OBEY KUYANGAMARA\\.gradle\\daemon\\9.0-milestone-1\\com.example.geotrack.app-main-40:\\layout\\item_location.xml"
+    },
+    {
+        "merged": "com.example.geotrack.app-mergeDebugResources-37:/layout/item_location.xml",
+        "source": "com.example.geotrack.app-main-40:/layout/item_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\OBEY KUYANGAMARA\\.gradle\\daemon\\9.0-milestone-1\\com.example.geotrack.app-mergeDebugResources-37:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\OBEY KUYANGAMARA\\.gradle\\daemon\\9.0-milestone-1\\com.example.geotrack.app-main-40:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\OBEY KUYANGAMARA\\.gradle\\daemon\\9.0-milestone-1\\com.example.geotrack.app-mergeDebugResources-37:\\layout\\fragment_map.xml",
+        "source": "C:\\Users\\OBEY KUYANGAMARA\\.gradle\\daemon\\9.0-milestone-1\\com.example.geotrack.app-main-40:\\layout\\fragment_map.xml"
+    },
+    {
+        "merged": "com.example.geotrack.app-mergeDebugResources-37:/layout/fragment_locations.xml",
+        "source": "com.example.geotrack.app-main-40:/layout/fragment_locations.xml"
+    }
+]

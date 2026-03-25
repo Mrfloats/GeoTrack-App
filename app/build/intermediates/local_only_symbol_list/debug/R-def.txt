@@ -1,0 +1,36 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+id bottom_navigation
+id btn_delete
+id btn_save
+id card_coordinates
+id et_name
+id fab_add
+id fragment_container
+id iv_location_icon
+id map
+id nav_locations
+id nav_map
+id rv_locations
+id til_name
+id tv_lat_lng
+id tv_lat_lng_sub
+id tv_location_name
+id tv_title
+layout activity_add_location
+layout activity_main
+layout fragment_locations
+layout fragment_map
+layout item_location
+menu bottom_nav_menu
+string app_name
+string title_home
+string title_saved_locations
+style Theme.GeoTrackApp

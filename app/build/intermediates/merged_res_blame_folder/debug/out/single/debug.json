@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\Users\\OBEY KUYANGAMARA\\.gradle\\daemon\\9.0-milestone-1\\com.example.geotrack.app-merged_res-38:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\OBEY KUYANGAMARA\\.gradle\\daemon\\9.0-milestone-1\\com.example.geotrack.app-main-40:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.geotrack.app-merged_res-38:/layout_fragment_locations.xml.flat",
+        "source": "com.example.geotrack.app-main-40:/layout/fragment_locations.xml"
+    },
+    {
+        "merged": "C:\\Users\\OBEY KUYANGAMARA\\.gradle\\daemon\\9.0-milestone-1\\com.example.geotrack.app-merged_res-38:\\layout_item_location.xml.flat",
+        "source": "C:\\Users\\OBEY KUYANGAMARA\\.gradle\\daemon\\9.0-milestone-1\\com.example.geotrack.app-main-40:\\layout\\item_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\OBEY KUYANGAMARA\\.gradle\\daemon\\9.0-milestone-1\\com.example.geotrack.app-merged_res-38:\\layout_fragment_locations.xml.flat",
+        "source": "C:\\Users\\OBEY KUYANGAMARA\\.gradle\\daemon\\9.0-milestone-1\\com.example.geotrack.app-main-40:\\layout\\fragment_locations.xml"
+    },
+    {
+        "merged": "com.example.geotrack.app-merged_res-38:/layout_item_location.xml.flat",
+        "source": "com.example.geotrack.app-main-40:/layout/item_location.xml"
+    },
+    {
+        "merged": "com.example.geotrack.app-merged_res-38:/layout_activity_add_location.xml.flat",
+        "source": "com.example.geotrack.app-main-40:/layout/activity_add_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\OBEY KUYANGAMARA\\.gradle\\daemon\\9.0-milestone-1\\com.example.geotrack.app-merged_res-38:\\layout_fragment_map.xml.flat",
+        "source": "C:\\Users\\OBEY KUYANGAMARA\\.gradle\\daemon\\9.0-milestone-1\\com.example.geotrack.app-main-40:\\layout\\fragment_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\OBEY KUYANGAMARA\\.gradle\\daemon\\9.0-milestone-1\\com.example.geotrack.app-merged_res-38:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\OBEY KUYANGAMARA\\.gradle\\daemon\\9.0-milestone-1\\com.example.geotrack.app-main-40:\\menu\\bottom_nav_menu.xml"
+    }
+]
