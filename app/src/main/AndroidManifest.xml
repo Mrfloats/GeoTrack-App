@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <queries>
+        <package android:name="com.google.android.apps.maps" />
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="google.navigation" />
+        </intent>
+    </queries>
 
     <application
         android:allowBackup="true"
@@ -18,7 +30,7 @@
         <!-- Google Maps API Key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="${MAPS_API_KEY}" />
+            android:value="AIzaSyBB2vSyIW7pS0uDhJd7e1bUd9Hm0iRdBIA" />
 
         <activity
             android:name=".ui.main.MainActivity"
@@ -29,7 +41,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.locations.AddLocationActivity" />
+        <activity 
+            android:name=".ui.map.MapActivity"
+            android:exported="false" />
+
+        <activity 
+            android:name=".ui.locations.AddLocationActivity"
+            android:exported="false" />
 
         <receiver
             android:name=".services.GeofenceBroadcastReceiver"

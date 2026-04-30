@@ -40,14 +40,12 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         viewModel = new ViewModelProvider(this).get(MapViewModel.class);
         locationTracker = new LocationTracker(requireContext());
 
-        SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map_container);
-        if (mapFragment == null) {
-            mapFragment = SupportMapFragment.newInstance();
-            getChildFragmentManager().beginTransaction()
-                    .replace(R.id.map_container, mapFragment)
-                    .commit();
+        SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
+        if (mapFragment != null) {
+            mapFragment.getMapAsync(this);
+        } else {
+            Log.e(TAG, "SupportMapFragment is null");
         }
-        mapFragment.getMapAsync(this);
     }
 
     @Override

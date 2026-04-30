@@ -7,25 +7,17 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
-import androidx.viewbinding.ViewBindings;
 import com.example.geotrack.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
-import java.lang.String;
 
 public final class FragmentMapBinding implements ViewBinding {
   @NonNull
   private final FrameLayout rootView;
 
-  @NonNull
-  public final FragmentContainerView mapContainer;
-
-  private FragmentMapBinding(@NonNull FrameLayout rootView,
-      @NonNull FragmentContainerView mapContainer) {
+  private FragmentMapBinding(@NonNull FrameLayout rootView) {
     this.rootView = rootView;
-    this.mapContainer = mapContainer;
   }
 
   @Override
@@ -51,19 +43,10 @@ public final class FragmentMapBinding implements ViewBinding {
 
   @NonNull
   public static FragmentMapBinding bind(@NonNull View rootView) {
-    // The body of this method is generated in a way you would not otherwise write.
-    // This is done to optimize the compiled bytecode for size and performance.
-    int id;
-    missingId: {
-      id = R.id.map_container;
-      FragmentContainerView mapContainer = ViewBindings.findChildViewById(rootView, id);
-      if (mapContainer == null) {
-        break missingId;
-      }
-
-      return new FragmentMapBinding((FrameLayout) rootView, mapContainer);
+    if (rootView == null) {
+      throw new NullPointerException("rootView");
     }
-    String missingId = rootView.getResources().getResourceName(id);
-    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
+
+    return new FragmentMapBinding((FrameLayout) rootView);
   }
 }

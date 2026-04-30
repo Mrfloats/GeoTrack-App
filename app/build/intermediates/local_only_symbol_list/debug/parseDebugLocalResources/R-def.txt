@@ -16,7 +16,7 @@ id et_radius
 id fab_add
 id fragment_container
 id iv_location_icon
-id map_container
+id map
 id nav_locations
 id nav_map
 id rv_locations
